@@ -1,0 +1,28 @@
+<div class="container">
+    <h1>Update Profile Data</h1>
+    <form #registerForm="ngForm" (ngSubmit)="onSubmit()">
+        <label>
+            Username or Email
+            <input type="email" name="email" required [(ngModel)]="newUser.username">
+        </label>
+
+        <label>
+            First Name
+            <input type="text" name="firstName" required [(ngModel)]="newUser.firstName">
+        </label>
+
+        <label>
+            Last Name
+            <input type="text" name="lastName" required [(ngModel)]="newUser.lastName">
+        </label>
+
+        <label>
+            Bio
+            <textarea name="bio" [(ngModel)]="newUser.bio"></textarea>
+        </label>
+
+        <button class="btn" type="submit">Register</button>
+
+        <app-alert [message]="errorMessage" type="error"></app-alert>
+    </form>
+</div>

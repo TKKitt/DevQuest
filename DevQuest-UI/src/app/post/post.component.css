@@ -1,0 +1,30 @@
+.post {
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 5px black;
+    overflow: hidden;
+    width: 75%;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.post-header {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--quinary-color);
+}
+
+.post-text {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--quinary-color);
+}
+
+.post-footer {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--quinary-color);
+    display: flex;
+    justify-content: center;
+}

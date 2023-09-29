@@ -1,0 +1,9 @@
+<app-post [post]="post"></app-post>
+<div *ngIf="isLoggedIn">
+    <app-create-comment></app-create-comment>
+</div>
+<div class="comment-feed">
+    <div *ngFor="let comment of commentList">
+        <app-comment [comment]="comment"></app-comment>
+    </div>
+</div>

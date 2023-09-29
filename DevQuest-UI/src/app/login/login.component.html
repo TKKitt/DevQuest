@@ -1,0 +1,18 @@
+<div class="container">
+    <h1>Login</h1>
+    <form #registerForm="ngForm" (ngSubmit)="onSubmit()">
+        <label>
+            Username or Email
+            <input type="email" name="email" required [(ngModel)]="user.username">
+        </label>
+
+        <label>
+            Password
+            <input type="password" name="password" required [(ngModel)]="user.password">
+        </label>
+
+        <button class="btn" type="submit">Login</button>
+
+        <app-alert [message]="errorMessage" type="error"></app-alert>
+    </form>
+</div>

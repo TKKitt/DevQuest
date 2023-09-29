@@ -1,0 +1,14 @@
+<div class="comment">
+    <div class="comment-header">
+        <h2><a>{{ comment.username }}</a></h2>
+        <h3>{{ formattedDate }}</h3>
+    </div>
+    <div class="comment-text">
+        <p>{{ comment.content }}</p>
+    </div>
+    <div class="comment-footer">
+        <button *ngIf="isAuthor && isLoggedIn" class="btn" (click)="deleteComment()">Delete</button>
+        <button *ngIf="isAuthor && isLoggedIn" class="btn"
+            [routerLink]="'/post/comment/edit/' + comment.id">Edit</button>
+    </div>
+</div>

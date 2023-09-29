@@ -1,0 +1,14 @@
+<div class="post">
+    <div class="post-header">
+        <h2><a [routerLink]="'/profile/' + post.username">{{post.username}}</a></h2>
+        <h3>{{formattedDate}}</h3>
+    </div>
+    <div class="post-text">
+        <p class="post-text">{{ post.content }}</p>
+    </div>
+    <div class="post-footer">
+        <button *ngIf="isAuthor && isLoggedIn" class="btn" (click)="deletePost()">Delete Post</button>
+        <button *ngIf="isAuthor && isLoggedIn" class="btn" [routerLink]="'/post/edit/' + post.id">Edit Post</button>
+        <button *ngIf="shouldRenderViewButton()" class="btn" [routerLink]="'/post/' + post.id">View Post</button>
+    </div>
+</div>

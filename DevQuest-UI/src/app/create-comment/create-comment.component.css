@@ -1,0 +1,17 @@
+.container {
+    background-color: var(--quaternary-color);
+    border-radius: 10px;
+}
+
+h2 {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+textarea {
+    border: none;
+    border-radius: 10px;
+    resize: none;
+    width: 100%;
+}

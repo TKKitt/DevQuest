@@ -1,0 +1,18 @@
+.container {
+    background-color: var(--quaternary-color);
+    border-radius: 10px;
+}
+
+label {
+    width: 100%;
+}
+
+textarea {
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    resize: none;
+}

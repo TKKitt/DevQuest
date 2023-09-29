@@ -1,0 +1,7 @@
+<h1>Post Feed</h1>
+<div *ngIf="isLoggedIn">
+    <app-create-post></app-create-post>
+</div>
+<div *ngFor="let post of postList">
+    <app-post [post]="post"></app-post>
+</div>

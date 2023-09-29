@@ -1,0 +1,8 @@
+.container {
+    background-color: var(--quaternary-color);
+    border-radius: 10px;
+}
+
+label {
+    width: 100%;
+}

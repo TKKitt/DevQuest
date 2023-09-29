@@ -1,0 +1,88 @@
+/* Setting Root Fonts and Colors */
+@font-face {
+  font-family: "MyFont";
+  src: url("assets/myfont.ttf");
+}
+
+:root {
+  --primary-color: #db5461;
+  --secondary-color: #ffd9ce;
+  --tertiary-color: #593c8f;
+  --quaternary-color: #8ef9f3;
+  --quinary-color: #171738;
+}
+
+/* Overriding Defaults */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "MyFont";
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--quinary-color);
+}
+
+h1 {
+  text-align: center;
+  margin: 20px;
+  color: var(--quinary-color);
+}
+
+ul {
+  list-style-type: none;
+}
+
+html,
+body {
+  background-color: var(--primary-color);
+}
+
+/* Setting Utility Styles */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+.btn {
+  background-color: var(--tertiary-color);
+  color: var(--secondary-color);
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  max-width: 400px;
+  margin: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+input {
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+}

@@ -1,0 +1,15 @@
+<div class="container">
+    <h1>{{profile.username}}</h1>
+    <h2>{{profile.firstName}} {{profile.lastName}}</h2>
+    <hr>
+    <p>{{profile.bio}}</p>
+    <p><strong>Profile Created On: {{this.formattedDate}}</strong></p>
+</div>
+<div class="profile-options">
+    <button *ngIf="isAccountOwner" class="btn" (click)="editProfile()">Edit Profile</button>
+</div>
+
+<h1>{{profile.username}}'s Posts</h1>
+<div *ngFor="let post of postList">
+    <app-post [post]="post"></app-post>
+</div>

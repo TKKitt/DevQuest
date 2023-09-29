@@ -1,0 +1,12 @@
+.container {
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+}
+
+textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+    width: 100%;
+}

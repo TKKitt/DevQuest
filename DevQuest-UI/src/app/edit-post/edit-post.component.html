@@ -1,0 +1,11 @@
+<div class="container">
+    <h2>Edit Post</h2>
+    <form #registerForm="ngForm" (ngSubmit)="onSubmit()">
+
+        <textarea name="content" [(ngModel)]="newPost.content" required></textarea>
+
+        <button class="btn" type="submit">Update Post</button>
+
+        <app-alert [message]="errorMessage" type="error"></app-alert>
+    </form>
+</div>
